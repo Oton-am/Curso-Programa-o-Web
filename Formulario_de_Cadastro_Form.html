@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício Aula 6</title>
+    </head>
+
+    <body bgcolor="D8BFD8">
+        <!--Cabeçalho informando a aula e o exercício a ser feito-->
+        <h2 align="center">Exercício - Aula 6</h2>
+        <hr>
+
+        <!--Cabeçalho principal, informando onde se cadastrar-->
+        <h1 align="center">
+            <em>
+                <big>
+                    Cadastre-se aqui
+                </big>
+            </em>
+        </h1>
+        <hr>
+        
+        <br>
+        <br>
+        <!--Formulário para cadastro-->
+        <form method="GET" action="index.html">
+            <!--Tabeela com os itens de input do form-->
+            <table border="0" align="center" width="45%" bgcolor="#F5F5F5">
+                <!--Nome-->    
+                <tr>
+                    <th align="center">                  
+                                <h2>Nome:</h2>
+                               <input type="text" name="nome" placeholder="Digite seu nome completo..."  style="text-align:center" size="60px"/>
+                    </th>
+                </tr>
+
+                <!--E-mail-->
+                <tr>    
+                    <th>
+                                <h2>E-mail:</h2>
+                                <input id="email" type="text" name="email" placeholder="exemplo@exemplo.com" size="60px" style="text-align:center"/>
+                    </th>
+                </tr>
+                <tr>
+                
+                <!--Celular-->
+                <tr>
+                    <th>
+                                <h2>Celular:</h2>
+                                <input type="text" name="celular" placeholder="(xx)xxxxx-xxxx" size="60px" style="text-align:center"/>
+                    </th>
+                </tr>
+
+                <!--Estado Civil com opções para selecionar-->
+                <tr>
+                    <th>
+                                <h2>Estado Civil:</h2>
+                                <select name="EstadoCivil" style="width:423px"/>
+                                    <!--opções de acordo com os estados civis reconhecidos pela legislação brasileira + união estavel-->
+                                    <option value="vazio"></option>
+                                    <option value="V">Viúvo(a)</option>
+                                    <option value="S">Solteiro(a)</option>
+                                    <option value="C">Casado(a)</option>
+                                    <option value="D">Divorciado(a)</option>
+                                    <option value="UE">União estável</option>
+                                    <option value="SJ">Separado(a) Judicialmente</option>
+                                </select>
+                    </th>
+                </tr>
+
+                <!--Sexo com opções para selecionar-->
+                <tr>
+                    <th>
+                                <h2>Sexo:</h2>
+                                <select name="sexo" style="width:423px"/>
+                                    <option value="vazio" style="width:423px"></option>
+                                    <option value="H">Masculino</option>
+                                    <option value="M">Feminino</option>
+                                    <option value="NS">Não sei responder</option>
+                                    <option value="PNR">Prefiro não responder</option>
+                                    <option value="O">Outros</option>
+                                </select>
+                    </th>
+                </tr>
+
+                <!--Escolaridade com opções para selecionar-->
+                <tr>
+                    <th>
+                                <h2>Escolaridade:</h2>
+                                <select name="escolaridade" style="width:423px;"/>
+                                    <option value="vazio"></option>
+                                    <option value="FI">Ensino Fundamental: Incompleto</option>
+                                    <option value="FC">Ensino Fundamental: Completo</option>
+                                    <option value="MI">Ensino Médio: Incompleto</option>
+                                    <option value="MC">Ensino Médio: Completo</option>
+                                    <option value="SI">Ensino Superior: Incompleto</option>
+                                    <option value="SC">Ensino Superior: Completo</option>
+                                    <option value="PI">Pós-graduação: Incompleto</option>
+                                    <option value="PC">Pós-graduação: Completo</option>
+                                </select>
+                </tr>
+
+                <!--CPF-->
+                <tr>
+                    <th>
+                        <h2>CPF:</h2>
+                        <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" size="60px" style="text-align:center" />
+                </tr>
+                
+                <!--País-->
+                <tr>
+                    <th>
+                        <h2>País:</h2>
+                        <input type="text" name="pais" size="60px" placeholder="Digite o país que você nasceu..." style="text-align:center"/>
+                    </th>
+                </tr>
+
+                <!--Estado-->
+                <tr>
+                    <th>
+                                <h2>Estado:</h2>
+                            <input type="text" name="estado" size="60px" placeholder="Digite o nome do estado que você nasceu..." style="text-align:center"/>
+                    </th>
+                </tr>
+
+                <!--CEP-->
+                <tr>
+                    <th>
+                                <h2>CEP:</h2>
+                                <input type="text" name="cep" placeholder="xxxxx-xxx" size="60px" style="text-align:center"/>
+                    </th>
+                </tr>
+
+                <!--Logradouro-->
+                <tr>
+                    <th>
+                                <h2>Logradouro:</h2>
+                                <input type="text" name="logradouro" placeholder="Digite seu endereço com número..." size="60px" style="text-align:center"/>
+                    </th>
+                <tr>
+                
+                <!--Bairro-->
+                <tr>
+                    <th>
+                                <h2>Bairro:</h2>
+                                <input type="text" name="bairro" placeholder="Digite o nome do bairro que você rezide..." size="60px" style="text-align:center"/> <br><br>
+                    </th>
+                </tr>
+            
+                <!--Botão para envio do formulário-->
+                <tr>
+                    <th>
+                        <button align="center" style="width:300px">
+                            <!--Ao enviar o formulário o usuario sera levado para outra página informando que o cadastro foi efetivado-->
+                            <a href="Envio do Cadastro Form.html">Enviar Formulário</a>
+                        </button>
+                        <br><br>
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <hr>
+        <br>
+        
+                <!--Parágrafo com link para voltar a página home-->
+                <p align="center">
+                    <a href="Pag_Home.html"><img src="imagens/IconPagInicial.jpeg" width="30px" height="30px"/></a>
+                    <br>
+                    <a href="imagens/home.html">Voltar a página inicial</a>
+                </p>
+    </body>
+</html>
